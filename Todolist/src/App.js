@@ -29,6 +29,10 @@ console.log(Dos);
       placeholder="Write your to do ..." />
       <button>Add to do</button>
       </form>
+      <hr />
+      <ul>
+     {Dos.map((item,index)=><li key={index}>{item}</li>)}
+     </ul>
     </div>
   );
 }
